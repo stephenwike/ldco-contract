@@ -3,6 +3,6 @@ export default class Collection {
         Object.assign(this, obj);
     }
 
-    name?: string;
-    dances?: string[];
+    name!: string;
+    dances: string[] = [];
 }
