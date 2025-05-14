@@ -4,9 +4,9 @@ export default class Track {
     }
 
     _id!: string;
-    isrc!: string;
+    isrc?: string;
     name!: string;
     artists: string[] = [];
-    duration_ms!: number;
-    explicit!: boolean;
+    duration_ms?: number;
+    explicit?: boolean;
 }
