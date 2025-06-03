@@ -12,3 +12,4 @@ export { default as UserDances } from './models/userDances.model';
 export { default as Venue } from './models/venue.model';
 
 export { default as UserEntity } from './entities/user.entity';
+export { getAllUserDanceIds } from './lib/getAllUserDanceIds';
