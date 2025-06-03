@@ -1,15 +1,13 @@
 import UserDances from "../models/userDances.model";
 
-export function getAllUserDanceIds(userDances: UserDances): string[] {
-    if (!(userDances instanceof UserDances)) {
-        throw new Error("Invalid UserDances instance");
-    }
+export function getAllUserDanceIds(userDances: Partial<UserDances>): string[] {
+    const { favorites = [], flagged = [], known = [], refresh = [] } = userDances ?? {};
 
     const all = [
-        ...userDances.favorites,
-        ...userDances.flagged,
-        ...userDances.known,
-        ...userDances.refresh,
+        ...favorites,
+        ...flagged,
+        ...known,
+        ...refresh,
     ];
 
     return Array.from(new Set(all));
