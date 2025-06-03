@@ -7,6 +7,10 @@ export default class UserDances {
         this.refresh = data.refresh ?? [];
     }
 
+    get all(): string[] {
+        return [...this.favorites, ...this.flagged, ...this.known, ...this.refresh];
+    }
+
     favorites: string[];
     flagged: string[];
     known: string[];
