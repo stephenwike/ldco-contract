@@ -13,6 +13,7 @@ export default class User {
     _id!: string;
     email!: string;
     name!: string;
+    username?: string;
     image?: string;
     bio?: string;
     profile: ProfileData;

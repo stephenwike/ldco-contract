@@ -8,6 +8,7 @@ export default class UserAcquaintance {
         this._id = data._id ?? '';
         this.email = data.email ?? '';
         this.name = data.name ?? '';
+        this.username = data.username ?? '';
         this.image = data.image;
         this.dances = new UserDances(data.dances);
         this.collections = data.collections ?? [];
@@ -21,6 +22,7 @@ export default class UserAcquaintance {
     _id!: string;
     email!: string;
     name!: string;
+    username?: string;
     image?: string;
     bio?: string;
 
