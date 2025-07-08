@@ -1,5 +1,5 @@
 import { ChoreographerModel } from './choreographer.model';
-import { TrackModel } from './track';
+import { TrackModel } from './track.model';
 
 export interface DanceModel {
     danceName: string;
