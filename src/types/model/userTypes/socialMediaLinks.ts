@@ -1,4 +1,4 @@
-export default class SocialMediaLinks {
+export interface SocialMediaLinks {
     facebook?: string;
     twitter?: string;
     instagram?: string;
