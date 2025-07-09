@@ -1,6 +1,7 @@
-import UserDances from "../models/userDances.model";
+import { DanceModel } from "../types/model/dance.model";
+import { UserDances } from "../types/model/userTypes/userDances";
 
-export function getAllUserDanceIds(userDances: Partial<UserDances>): string[] {
+export function getAllUserDanceIds(userDances: UserDances): DanceModel[] {
     const { favorites = [], flagged = [], known = [], refresh = [] } = userDances ?? {};
 
     const all = [
@@ -10,5 +11,5 @@ export function getAllUserDanceIds(userDances: Partial<UserDances>): string[] {
         ...refresh,
     ];
 
-    return Array.from(new Set(all));
+    return all.filter((item, index) => all.indexOf(item) === index);
 }
