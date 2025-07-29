@@ -6,7 +6,5 @@ export interface TrackModel {
     uri: string;
     duration_ms: number;
     explicit: boolean;
-    is_playable: boolean;
-    preview_url: string;
     isVerified: boolean;
 }
