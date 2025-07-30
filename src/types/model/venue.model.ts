@@ -11,4 +11,7 @@ export interface VenueModel {
     contactPhone: string;
     lessons: LessonModel[];
     isVerified: boolean;
+    isDeleted: boolean;
+    deletedAt: Date | null;
+    createdAt: Date | null;
 }

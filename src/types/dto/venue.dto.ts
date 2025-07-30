@@ -8,6 +8,9 @@ export interface VenueDTO {
     contactEmail: string;
     contactName: string;
     contactPhone: string;
+    isDeleted: boolean;
+    deletedAt: Date | null;
+    createdAt: Date | null;
 
     // Added Data
     lessonsIds: string[];
