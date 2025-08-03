@@ -1,5 +1,8 @@
-export interface LessonDTO {
-    id: string;
+export interface LessonEntity {
+    _id: string;
+    venueid: string;
+    title: string;
+    description: string;
     lessonday: string;
     lessonstart: string;
     instructors: string[];
@@ -7,5 +10,4 @@ export interface LessonDTO {
     lessoncost: string;
     notes: string;
     difficulty: string;
-    isVerified: boolean;
 }

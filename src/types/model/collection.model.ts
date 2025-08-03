@@ -1,6 +1,7 @@
 import { DanceModel } from "./dance.model";
 
 export interface CollectionModel {
+    id: string;
     name: string;
     dances: DanceModel[];
     createdAt: Date;
