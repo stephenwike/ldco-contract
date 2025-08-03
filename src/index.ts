@@ -29,3 +29,6 @@ export { UserDances } from './types/model/userTypes/userDances';
 
 // LIB FUNCTIONS
 export { getAllUserDanceIds } from './lib/getAllUserDanceIds';
+
+// REQUESTS
+export { UserInfoUpdateRequest } from './types/requests/userInfoUpdate.request';
