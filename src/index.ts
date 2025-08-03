@@ -48,6 +48,7 @@ export { UserDances } from './types/model/userTypes/userDances';
 
 // LIB FUNCTIONS
 export { getAllUserDanceIds } from './lib/getAllUserDanceIds';
+export { itemArrayToItemRecords } from './lib/itemArrayToItemRecords';
 
 // REQUESTS
 export { UserInfoUpdateRequest } from './types/requests/userInfoUpdate.request';
