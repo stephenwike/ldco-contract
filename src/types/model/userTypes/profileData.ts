@@ -1,8 +1,8 @@
 import { CollectionModel } from "../collection.model";
-import { UserDances } from "../userDances.model";
 import { SocialMediaLinks } from "./socialMediaLinks";
-import { UserAcquaintanceModel } from "../userAquaintance";
 import { VenueModel } from "../venue.model";
+import { UserDances } from "./userDances";
+import { UserAcquaintanceModel } from "../userAcquaintance.model";
 
 export interface ProfileData {
     dances: UserDances;
