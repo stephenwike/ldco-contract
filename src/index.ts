@@ -52,7 +52,7 @@ export { itemArrayToItemRecords } from './lib/itemArrayToItemRecords';
 
 // REQUESTS
 export { UserInfoUpdateRequest } from './types/requests/userInfoUpdate.request';
-export { UserCollectionUpdateRequest } from './types/requests/userCollectionUpdate';
+export { UserCollectionUpdateRequest } from './types/requests/userCollectionUpdate.request';
 
 // CONVERTERS
 export { toChoreographerDTO } from './lib/converters/toChoreographerDTO';
