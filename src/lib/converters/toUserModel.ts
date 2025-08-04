@@ -13,7 +13,7 @@ export function toUserModel(
     friendsMap: Record<string, UserAcquaintanceModel>,
     followingMap: Record<string, UserAcquaintanceModel>
 ): UserModel {
-    const expand = <T>(ids: string[], map: Record<string, T>): T[] => ids.map(id => map[id]).filter(Boolean);
+    const expand = <T>(ids: string[] = [], map: Record<string, T>): T[] => ids.map(id => map[id]).filter(Boolean);
 
     return {
         _id: userDTO._id,
@@ -25,19 +25,19 @@ export function toUserModel(
         isVerified: userDTO.isVerified,
         profile: {
             dances: {
-                favorites: expand(userDTO.profile.danceIds.favorites, danceMap),
-                flagged: expand(userDTO.profile.danceIds.flagged, danceMap),
-                known: expand(userDTO.profile.danceIds.known, danceMap),
-                refresh: expand(userDTO.profile.danceIds.refresh, danceMap),
+                favorites: expand(userDTO.profile?.danceIds?.favorites, danceMap),
+                flagged: expand(userDTO.profile?.danceIds?.flagged, danceMap),
+                known: expand(userDTO.profile?.danceIds?.known, danceMap),
+                refresh: expand(userDTO.profile?.danceIds?.refresh, danceMap),
             },
-            collections: expand(userDTO.profile.collections, collectionMap),
-            venues: expand(userDTO.profile.venues, venueMap),
-            friends: expand(userDTO.profile.friends, friendsMap),
-            following: expand(userDTO.profile.following, followingMap),
-            friendsRequested: expand(userDTO.profile.friendsRequested, friendsMap),
-            friendRequests: expand(userDTO.profile.friendRequests, friendsMap),
-            followersCount: userDTO.profile.followersCount || 0,
-            links: userDTO.profile.links,
+            collections: expand(userDTO.profile?.collections, collectionMap),
+            venues: expand(userDTO.profile?.venues, venueMap),
+            friends: expand(userDTO.profile?.friends, friendsMap),
+            following: expand(userDTO.profile?.following, followingMap),
+            friendsRequested: expand(userDTO.profile?.friendsRequested, friendsMap),
+            friendRequests: expand(userDTO.profile?.friendRequests, friendsMap),
+            followersCount: userDTO.profile?.followersCount || 0,
+            links: userDTO.profile?.links || [],
         },
     };
 }
