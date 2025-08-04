@@ -8,6 +8,6 @@ export interface DanceModel {
     stepsheet: string;
     difficulty: string;
     isVerified: boolean;
-    primaryTrack: TrackModel;
+    primaryTrack: TrackModel | null; // TODO: Primary track can be null if not set but this should not be allowed (fix data then safeguard)
     tracks: TrackModel[];
 }
