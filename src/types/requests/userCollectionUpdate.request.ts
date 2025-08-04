@@ -1,4 +1,3 @@
-
 export interface UserCollectionUpdateRequest {
     name?: string;
     danceIds?: string[];

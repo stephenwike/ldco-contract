@@ -1,5 +1,5 @@
 export interface CollectionDTO {
-    _id: string;
+    id: string;
     name: string;
     dances: string[];
     createdAt: Date;
