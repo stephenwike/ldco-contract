@@ -3,7 +3,7 @@ export interface UserCollectionUpdateRequest {
     name?: string;
     danceIds?: string[];
     createdBy?: string;
-    updated?: string;
+    updatedAt?: Date;
     archived?: boolean;
     archivedAt?: Date;
 }
