@@ -8,6 +8,7 @@ export function toLessonDTO(
 
   return {
     id: LessonEntity._id,
+    venueid: LessonEntity.venueid,
     lessonday: LessonEntity.lessonday,
     lessonstart: LessonEntity.lessonstart,
     instructors: LessonEntity.instructors,
