@@ -9,4 +9,6 @@ export interface CollectionModel {
     createdBy: string;
     isCopyable: boolean;
     isVerified: boolean;
+    isArchived: boolean;
+    archivedAt?: Date;
 }
