@@ -14,7 +14,7 @@ export function toCollectionModel(
     const dances = dto.dances.map(id => danceMap[id]).filter(Boolean);
 
     return {
-        id: dto._id,
+        id: dto.id,
         name: dto.name,
         dances: dances.map(d => toDanceModel(d, trackMap, choreographerMap)),
         isVerified: dto.isVerified,
