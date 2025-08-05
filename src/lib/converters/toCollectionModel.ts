@@ -11,7 +11,16 @@ export function toCollectionModel(
     trackMap: Record<string, TrackDTO>,
     choreographerMap: Record<string, ChoreographerDTO>
 ): CollectionModel {
-    const dances = dto.dances.map(id => danceMap[id]).filter(Boolean);
+
+    const dances = (dto.dances || [])
+        .map(id => {
+            const dance = danceMap[id];
+            if (!dance) {
+                console.warn(`Dance with id "${id}" not found in danceMap for collection "${dto.name}"`);
+            }
+            return dance;
+        })
+        .filter(Boolean);
 
     return {
         id: dto.id,
