@@ -4,7 +4,7 @@ import { DanceDTO } from "../../types/dto/dance.dto";
 import { TrackDTO } from "../../types/dto/track.dto";
 import { UserAcquaintanceDTO } from "../../types/dto/userAcquaintance.dto";
 import { UserAcquaintanceModel } from "../../types/model/userAcquaintance.model";
-import { toCollectionModel } from "./toCollectionsModel";
+import { toCollectionModel } from "./toCollectionModel";
 import { toDanceModel } from "./toDanceModel";
 
 export function toUserAcquaintanceModel(

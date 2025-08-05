@@ -4,5 +4,6 @@ export interface UserCollectionEntity {
   danceIds: string[];
   createdBy: string;
   createdAt: Date;
+  updatedAt: Date;
   isPrivate: boolean;
 }

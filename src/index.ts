@@ -3,7 +3,6 @@ export { AppealChoreographerUser } from './types/entities/appeal_choreographer_u
 export { AppealInstructorUser } from './types/entities/appeal_instructor_user.entity';
 export { CancelledLessonEntity } from './types/entities/cancelled_lesson.entity';
 export { ChoreographerEntity } from './types/entities/choreographer.entity';
-export { DanceCollectionEntity } from './types/entities/dance_collection.entity';
 export { DanceEntity } from './types/entities/dance.entity';
 export { FriendRequestEntity } from './types/entities/friend_request.entity';
 export { InstructorEntity } from './types/entities/instructor.entity';
@@ -57,7 +56,7 @@ export { UserCollectionUpdateRequest } from './types/requests/userCollectionUpda
 // CONVERTERS
 export { toChoreographerDTO } from './lib/converters/toChoreographerDTO';
 export { toChoreographerModel } from './lib/converters/toChoreographerModel';
-export { toCollectionModel } from './lib/converters/toCollectionsModel';
+export { toCollectionModel } from './lib/converters/toCollectionModel';
 export { toDanceDTO } from './lib/converters/toDanceDTO';
 export { toDanceModel } from './lib/converters/toDanceModel';
 export { toInstructorDTO } from './lib/converters/toInstructorDTO';
