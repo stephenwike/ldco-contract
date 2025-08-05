@@ -22,5 +22,7 @@ export function toCollectionModel(
         updatedAt: dto.updatedAt,
         createdBy: dto.createdBy,
         isCopyable: dto.isCopyable,
+        isArchived: dto.isArchived,
+        archivedAt: dto.archivedAt,
     };
 }
