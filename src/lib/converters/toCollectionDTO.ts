@@ -17,5 +17,6 @@ export function toCollectionDTO(
     isPrivate: collectionEntity.isPrivate,
     isCopyable: collectionEntity.isCopyable,
     isArchived: collectionEntity.isArchived,
+    archivedAt: collectionEntity.archivedAt
   };
 }
