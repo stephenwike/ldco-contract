@@ -8,5 +8,5 @@ export interface UserCollectionEntity {
   isPrivate: boolean;
   isCopyable: boolean;
   isArchived: boolean;
-  archivedAt: Date;
+  archivedAt: Date | null;
 }

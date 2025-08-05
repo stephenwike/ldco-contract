@@ -8,7 +8,7 @@ export interface CollectionDTO {
     isPrivate: boolean; // TODO: Private collections should not be returned in public APIs
     isCopyable: boolean;
     isArchived: boolean;
-    archivedAt: Date;
+    archivedAt: Date | null;
 
     // Added Data
     isVerified: boolean;

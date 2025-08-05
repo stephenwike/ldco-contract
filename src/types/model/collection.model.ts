@@ -10,5 +10,5 @@ export interface CollectionModel {
     isCopyable: boolean;
     isVerified: boolean;
     isArchived: boolean;
-    archivedAt: Date;
+    archivedAt: Date | null;
 }
