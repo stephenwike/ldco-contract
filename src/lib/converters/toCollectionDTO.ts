@@ -14,5 +14,8 @@ export function toCollectionDTO(
     createdAt: collectionEntity.createdAt,
     updatedAt: collectionEntity.updatedAt,
     createdBy: collectionEntity.createdBy,
+    isPrivate: collectionEntity.isPrivate,
+    isCopyable: collectionEntity.isCopyable,
+    isArchived: collectionEntity.isArchived,
   };
 }

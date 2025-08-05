@@ -6,4 +6,7 @@ export interface UserCollectionEntity {
   createdAt: Date;
   updatedAt: Date;
   isPrivate: boolean;
+  isCopyable: boolean;
+  isArchived: boolean;
+  archivedAt?: Date;
 }
