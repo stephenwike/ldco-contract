@@ -56,6 +56,7 @@ export { UserCollectionUpdateRequest } from './types/requests/userCollectionUpda
 // CONVERTERS
 export { toChoreographerDTO } from './lib/converters/toChoreographerDTO';
 export { toChoreographerModel } from './lib/converters/toChoreographerModel';
+export { toCollectionDTO } from './lib/converters/toCollectionDTO';
 export { toCollectionModel } from './lib/converters/toCollectionModel';
 export { toDanceDTO } from './lib/converters/toDanceDTO';
 export { toDanceModel } from './lib/converters/toDanceModel';
