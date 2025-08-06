@@ -28,6 +28,7 @@ export { TrackDTO } from './types/dto/track.dto';
 export { UserDTO } from './types/dto/user.dto';
 export { UserAcquaintanceDTO } from './types/dto/userAcquaintance.dto';
 export { VenueDTO } from './types/dto/venue.dto';
+export { UserDanceDTO } from './types/dto/userDances.dto';
 
 // MODELS
 export { ChoreographerModel } from './types/model/choreographer.model';
