@@ -1,6 +1,6 @@
-import { UserDances } from "../types/model/userTypes/userDances";
+import { UserDanceDTO } from "../types/dto/userDances.dto";
 
-export function getAllUserDanceIds(userDances: UserDances): string[] {
+export function getAllUserDanceIds(userDances: UserDanceDTO): string[] {
     const { favorites = [], flagged = [], known = [], refresh = [] } = userDances ?? {};
 
     const all = [
@@ -11,7 +11,5 @@ export function getAllUserDanceIds(userDances: UserDances): string[] {
     ];
 
     // Remove duplicates and return array of string IDs
-    return all
-        .filter((item, index, self) => self.findIndex(i => i.id === item.id) === index)
-        .map(item => item.id);
+    return Array.from(new Set(all));
 }

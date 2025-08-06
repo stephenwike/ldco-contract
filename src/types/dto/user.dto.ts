@@ -1,3 +1,5 @@
+import { UserDanceDTO } from "./userDances.dto";
+
 export interface UserDTO {
   _id: string;
   email: string;
@@ -7,12 +9,7 @@ export interface UserDTO {
   bio: string;
   isVerified: boolean;
   profile: {
-    danceIds: {
-      favorites: string[];
-      flagged: string[];
-      known: string[];
-      refresh: string[];
-    };
+    danceIds: UserDanceDTO;
     collections: string[];
     venues: string[];
     friends: string[];
