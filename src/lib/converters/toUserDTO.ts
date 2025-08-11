@@ -18,7 +18,7 @@ export function toUserDTO(
     friendRequests: string[] = []
 ): UserDTO {
     return {
-        _id: user._id.toString(),
+        id: user._id.toString(),
         email: user.email ?? '',
         name: user.name ?? '',
         username: user.username ?? '',

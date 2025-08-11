@@ -1,7 +1,7 @@
 import { UserDanceDTO } from "./userDances.dto";
 
 export interface UserDTO {
-  _id: string;
+  id: string;
   email: string;
   name: string;
   username: string;
