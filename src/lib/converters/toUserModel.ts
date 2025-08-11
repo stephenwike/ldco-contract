@@ -16,7 +16,7 @@ export function toUserModel(
     const expand = <T>(ids: string[] = [], map: Record<string, T>): T[] => ids.map(id => map[id]).filter(Boolean);
 
     return {
-        _id: userDTO._id,
+        _id: userDTO.id,
         email: userDTO.email,
         name: userDTO.name,
         username: userDTO.username,
