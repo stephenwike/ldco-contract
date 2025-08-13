@@ -19,7 +19,7 @@ export function toUserModel(
         _id: userDTO.id,
         email: userDTO.email,
         name: userDTO.name,
-        username: userDTO.username,
+        username: userDTO.username ?? userDTO.name ?? '',
         image: userDTO.image,
         bio: userDTO.bio,
         isVerified: userDTO.isVerified,
