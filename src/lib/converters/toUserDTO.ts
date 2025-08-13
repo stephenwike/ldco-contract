@@ -21,7 +21,7 @@ export function toUserDTO(
         id: user._id.toString(),
         email: user.email ?? '',
         name: user.name ?? '',
-        username: user.username ?? '',
+        username: user.username ?? user.name ?? '',
         image: user.image ?? '',
         bio: user.bio ?? '',
         isVerified,
