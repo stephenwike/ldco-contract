@@ -73,3 +73,6 @@ export { toUserDTO } from './lib/converters/toUserDTO';
 export { toUserModel } from './lib/converters/toUserModel';
 export { toVenueDTO } from './lib/converters/toVenueDTO';
 export { toVenueModel } from './lib/converters/toVenueModel';
+
+// AUTH
+export { AuthStatus, AuthUser, AuthAdapter } from './types/auth/auth';
