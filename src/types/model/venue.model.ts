@@ -1,6 +1,7 @@
 import { LessonModel } from "./lesson.model";
 
 export interface VenueModel {
+    id: string;
     venuename: string;
     venueaddress: string;
     geolocation: [number, number];
